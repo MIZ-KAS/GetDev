@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Venus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.csc" />
+    <script src="main.js"></script>
+    <style>
+            
+            h1 {
+                font-family: FontAwesome;
+                color: white;
+                text-align: center;
+                font-size: 400%;
+                font-style: italic;
+                padding: 5px;
+                            } 
+            ul#menu li {
+                    list-style-type: none;
+                    display: inline;
+                    margin: 0%;
+                    padding: 0%;         
+            }
+
+            ul#menu li a{
+                color: aliceblue;
+                padding-left: 20px;
+                padding-right: 30px;
+                
+            }
+
+            ul#menu li a:hover{
+
+                color: red;
+            }
+            
+            div.first{
+                background-image: url('images/1.jpg');
+                background-repeat: no-repeat;
+                border: 1px solid;
+                margin-left: 200px;
+                margin-right: 200px;          
+            }
+
+            p.top{
+                color:white;
+                font-size: 500%;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-top: 0px;
+            
+            }
+            p.box {
+                border:1px solid white;
+                margin-top: 10px;
+                margin-bottom: 100px;
+                margin-right: 420px;
+                margin-left: 420px;
+                font-size: 20px;
+                padding: 20px;
+            }
+            #container{
+                margin-left: 200px;
+                margin-right: 100px;
+                height: 550px;
+                width: 1170px;
+
+            }
+
+            @font-face {
+                font-family: 'fontawesome-webfont';
+                src: url('fonts/fontawesome-webfont.eot');
+                src: url('fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+                     url('fontawesome-webfont.woff') format('woff'),
+                     url('fontawesome-webfont.ttf') format('truetype'),
+                     url('fontawesome-webfont.svg#svgFontName') format('svg');
+
+            }
+            .one {
+
+                width: 200px;
+                height: 200px;
+                float: left;
+                padding-left: 20px;
+                padding-right: 30px;
+                margin-top: 10px;
+
+            }
+            .two {
+
+                width: 500px;
+                height: 200px;
+                float: left;
+                padding-left: 20px;
+                padding-right: 30px;
+                line-height: 0.9cm;
+                padding-top: 0px;
+
+            }
+            .three{
+
+                float: right;
+                line-height: 1.15cm;
+                background-color: gray;
+                width: 250px;
+                height: 420px;
+                padding-left: 2px;
+                padding-right: 50px;
+                margin-right: 20px;
+                margin-bottom: 50px;
+                 
+            }
+            #service{
+                margin-left: 200px;
+                margin-right: 100px;
+                height: 550px;
+                width: 1170px;
+                background-color: gray;
+            }
+
+            .picture{
+                float: left;
+                height: 300px;
+                width: 300px;
+                padding-left: 200px;
+
+            }
+
+            .text{
+                float:left;
+                height: 300px;
+                width: 300px;
+                color: black;
+                line-height: 0.7cm;
+                padding-left: 200px;
+            }
+            .caption{
+                display: inline;
+            }
+
+            #quote{
+                padding-top: 100px;
+                padding-left: 100px;
+                padding-right: 100px;
+                padding-bottom: 100px;
+                margin-left: 200px;
+                margin-right: 200px;
+                height: 100px;
+                width: 970px;
+                background-image: url("images/1.jpg");
+                background-repeat: no-repeat;
+                
+                
+                
+            }
+            #mainevent{
+                height: 1200px;
+                width: 1170px;
+                margin-right: 200px;
+                margin-left: 200px;
+             
+            }
+
+            .event{
+                position: relative;
+            }
+            #event01{
+                position: absolute;
+                bottom: 50px;
+                left: 100px;
+                background-color: beige;
+                color: black;
+                height: 250px;
+                width: 300px;
+            }
+
+            #event02{
+                position: absolute;
+                bottom: 50px;
+                right: 100px;
+                background-color: beige;
+                color: black;
+                height: 250px;
+                width: 300px;
+            }
+
+            #event03{
+                margin-top: 0px;
+                position: absolute;
+                bottom: 50px;
+                left: 90px;
+                background-color: beige;
+                color: black;
+                height: 250px;
+                width: 300px;
+                text-align: left;
+                padding-left: 20px;
+               
+            }
+
+            footer{
+
+                background-color: black;
+                text-align: center;
+                color: white;
+                width: 1170px;
+                height: 30px;
+                margin-left: 200px;
+                margin-right: 200px;
+                padding-top: 10px;
+            }
+            #venue{
+                margin-left: 200px;
+                margin-right: 100px;
+                height: 450px;
+                width: 1170px;
+                background-color: rgb(56, 52, 52);
+            }
+            .social{
+                float: left;
+                padding-top: 50px;
+                padding-left: 95px;
+            }
+            .call{
+                float: left;
+                padding-top: 50px;
+                padding-left: 95px;
+                line-height: 0.7cm;
+            }
+            .navigate{
+                float: left;
+                padding-top: 50px;
+                padding-left: 95px;
+                line-height: 0.7cm;
+            }
+            .recent{
+                float: right;
+                display: inline-table;
+                height: 400px;
+                padding-right: 100px;
+                padding-top: 50px;
+                
+                
+            }
+
+            
+            </style>
+</head>
+<body>
+    <div class="first">
+    <h1 id=" header "> venus </h1>
+    <center>
+            <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">pages</a></li>
+                    <li><a href="#">Contact us</a></li>
+            </ul>
+    </center>
+        
+    
+
+    <p class="top"><b>V I V A M U S</b> </p>
+    <center>
+            <p class="box"> LOREM IPSUM DOLOR <br>
+                SIT AMET, <br> CONSECTETUR <br> ADIPISCING ELIT 
+                 </p>
+    </center>
+    
+
+    </div>
+
+    <div id="container">
+        <h1 style = color:black > welcome  </h1>
+        <div class="one"> <img src="images/4.jpg" alt="model" style="height: 400px; width: 200px;"></div>
+        <div class="two"> <p> Lorem ipsum dolor sit, consectrtur adipiscing slit,
+                              cras return laculis, non convalisis fells mattis at. 
+                              Donec fringilla lacus eu prrtium rutum, cas aliqut 
+                              conngue ullamcoper. Etiqam mattis eros eu ullamcorper 
+                              valutpail. Pronit et dul a urnu efficiture varios.</p>
+
+                              <p>Lorem ipsum dolor sit, consectrtur adipiscing slit,
+                                    cras return laculis, non convalisis fells mattis at. 
+                                    Donec fringilla lacus eu prrtium rutum, cas aliqut 
+                                    conngue ullamcoper.</p>
+                              <p>Lorem ipsum dolor sit, consectrtur adipiscing slit,
+                                    cras return laculis, non convalisis fells mattis at. 
+                                    Donec fringilla lacus eu prrtium rutum, cas aliqut 
+                                    conngue ullamcoper. Etiqam mattis eros eu ullamcorper 
+                                    valutpail. Pronit et dul a urnu efficiture varios.</p>
+
+        </div>
+        <div class="three"><h4> Our Advantages </h4>
+            > Sed eu augue eget mass gradida <br>
+            > Vivannus fini velit quis oric <br>
+            > Donec et nibh mass viverrar luctus. <br>
+            > Lerem lpsum docor sit consectetur. <br>
+            > Sed eu augue eget mass gradida <br>
+            > Vivannus fini velit quis oric. <br>
+            > Sed eu augue eget mass gradida <br>
+            > Vivannus fini velit quis oric <br>
+        </div>
+    </div>
+
+    <div id = "service" style="background-color: gray;"> 
+        <h1 style = "color: black "> service </h1>
+        <div class = "picture">
+            <img src="images/gift.png" alt="gift" style="height: 90px; width: 90px; border-radius: 50%; padding: 10px;">
+            <span class="caption"> setting </span>
+            <img src="images/redwine.jpg" alt="wine" style="height: 90px; width: 90px; border-radius: 50%;">
+            <span class="caption"> setting </span>            
+            <img src="images/user.png" alt="user" style="height: 90px; width: 90px; border-radius: 50%;">
+            <span class="caption"> setting </span>
+            <img src="images/heart.png" alt="heart" style="height: 90px; width: 90px; border-radius: 50%;">
+            <span class="caption"> setting </span>
+            <img src="images/anchor.png" alt="anchor" style="height: 90px; width: 90px; border-radius: 50%;">
+            <span class="caption"> setting </span>
+            <img src="images/settings.png" alt="settings" style="height: 90px; width: 90px; border-radius: 50%;">
+
+
+        </div>
+        <div class = text>
+                <p> Lorem ipsum dolor sit, consectrtur adipiscing slit,
+                cras return laculis, non convalisis fells mattis at. 
+                Donec fringilla lacus eu prrtium rutum, cas aliqut 
+                conngue ullamcoper. Etiqam mattis eros eu ullamcorper 
+                valutpail. Pronit et dul a urnu efficiture varios.</p>
+                
+                <p>Lorem ipsum dolor sit, consectrtur adipiscing slit,
+                    cras return laculis, non convalisis fells mattis at. 
+                    Donec fringilla lacus eu prrtium rutum, cas aliqut 
+                    conngue ullamcoper. Etiqam mattis eros eu ullamcorper 
+                    valutpail. Pronit et dul a urnu efficiture varios.</p>
+        </div>
+    </div>
+
+        <div id= "quote">
+
+            <center>
+
+                        <p>Lorem ipsum dolor sit, consectrtur adipiscing slit,
+                        cras return laculis, non convalisis fells mattis at. 
+                        Donec fringilla lacus eu prrtium rutum, cas aliqut  
+                        </p>
+                        <p>Lorem ipsum dolor sit, consectrtur adipiscing slit,
+                            cras return laculis, non convalisis fells mattis at. 
+                            Donec fringilla lacus eu prrtium rutum, cas aliqut</p>
+                            <p>Lorem ipsum dolor sit, consectrtur adipiscing slit,
+                                cras return laculis, non convalisis fells mattis at. 
+                                Donec fringilla lacus eu prrtium rutum, cas aliqut </p>
+                                
+                            <p>conngue ullamcoper. Etiqam mattis eros eu ullamcorper 
+                                valutpail. Pronit et dul a urnu efficiture varios. </p>
+                            
+            </center>
+
+            <center>
+                <p> <strong> JOHN SMITH </strong>  - FOUNDER </p>
+
+
+            </center>   
+
+        </div>
+
+        <div id="mainevent">
+        <h1 style = color:black > event  </h1>
+
+        <div class="event">
+            <img src="images/2.jpg" alt="wine" style="width: 450px; height: 350px; padding-left: 350px;">
+        <div id="event01">
+        <center>
+            <h3 style="font-size: 30px; color: orangered;"> 01 <sub> 12/2016  </sub> </h3>
+            <h4> NUNC MALESUADA LACINIA </h4>
+            <P> Nunc non maximus augue, sit amet dictum diam. Etiam uitrices hendirent is volutpat tortor viverra et.</P>
+        </center>
+        </div>       
+        </div>
+        <div class="event">
+                <img src="images/3.jpg" alt="flower" style="width: 450px; height: 350px; padding-left: 350px;">
+            <div id="event02">
+                <center>
+                <h3 style="font-size: 30px; color: green;"> 05 <sub> 12/2016</sub> </h3>
+                <h4> NUNC MALESUADA LACINIA </h4>
+                <P> Nunc non maximus augue, sit amet dictum diam. Etiam uitrices hendirent is volutpat tortor viverra et.</P>
+            </center>
+            </div>       
+            </div>
+            
+         <div class="event">
+            <img src="images/6.jpg" alt="wine" style="width: 450px; height: 350px; padding-left: 350px;">
+                    <div id="event03">
+                        <center>
+                        <h3 style="font-size: 30px; color: orangered;"> 09 <sub> 12/2016 </sub></h3>
+                        </center>
+                        <h4> NUNC MALESUADA LACINIA </h4>
+                        <P> Nunc non maximus augue, sit amet dictum diam. Etiam uitrices hendirent is volutpat tortor viverra et.</P>
+                    </div>       
+                    </div>
+
+                </div>
+
+
+                <div id="venue">
+                    <div class="social"> <h1 style="color:white; font-size: 20px;"> Venue </h1> </div>
+                    <div class="call"> 
+                        <h1 style="font-size: 20px;"> CONTACT INFO </h1>
+                        <p style="color: grey;"> Call Us</p>
+                        <p style="color:white;"> +1234567891 </p>
+                        <p style="color: grey;"> My Company, 875 Jewel Raod <br> 8907 Ukraine</p>
+                                    
+                    </div>
+                    <div class="navigate"> 
+                        <h1 style="font-size: 20px;"> NAVIGATION </h1>
+                        <ul style="color:white;">
+                            <li> About </li>
+                            <li> Gallery </li>
+                            <li> Icons </li>
+                            <li> Short Codes </li>
+                            <li> Contact </li>
+                        </ul>
+                    </div>
+                    <div class="recent"> <h1 style="font-size: 20px;"> RECENT POST </h1>
+                        <img src="images/6.jpg" alt="bae" style="width:130px; height:130px;">
+                        <img src="images/2.jpg" alt="wine"style="width:130px; height:130px;">
+                        <br>
+                        <img src="images/7.jpg" alt="shoe"style="width:130px; height:130px;">
+                        <img src="images/3.jpg" alt="flower"style="width:130px; height:130px;">
+                    
+                    </div>
+                </div>
+
+
+        <footer>
+
+                &copy 2017 Venue. All right reserved | Design by <span style="color:red"> W3layouts.</span> 
+
+
+            </footer>
+
+   <!-- <div class="jumbotron text-center">
+            <h1>My First Bootstrap Page</h1>
+            <p>Resize this responsive page to see the effect!</p> 
+          </div>
+            
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Column 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Column 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Column 3</h3>        
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              </div>
+            </div>
+          </div>
+        -->
+    
+</body>
+</html>
